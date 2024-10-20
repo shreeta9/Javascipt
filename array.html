@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=new Array(5)
+        a[0]="shreeta"
+        a[0]=1
+        a[0]=20
+        a[0]=3.5
+        a[0]=null
+        a[0]=true
+        document.write("<br>name is "+a[0])
+        document.write("<br>number is "+a[2])
+        document.write("<br>length is "+a.length)
+
+        let b = new Array(10,20,30,40)
+        b.sort()
+        for(c=0;c<b.length;c++){
+            document.write("<br>"+b[c])
+        }
+        
+        let v = new Array("john","sita","red")
+        v.reverse()
+        for(let x of v){
+            document.write("<br>"+x)
+        }
+        
+
+        let s=v.join(",")
+        document.write("<br>string = "+s)
+
+        y="udupi,manipal,kapu,manglore"
+        let w= y.split(",")
+        w.forEach((z)=>{document.write("<br>"+z.toUpperCase())})
+        </script>
+</body>
+</html>
