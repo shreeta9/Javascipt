@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<body>
+<script>
+    function wish(){
+        document.write("<br>Good Morning")
+    }
+    let a=20
+    function scope(){
+        
+        document.write(`<br>a=${a} `)
+    }
+    function greet(n){
+        document.write("<br>Good "+n)
+    }
+function add(a,b,v){
+    d=a+b+v
+    return d
+}
+x = function(n){
+    document.write("<br> "+n)
+}
+y=(c)=>{
+    document.write("<br>Welcome"+c)
+}
+    wish()
+
+    scope()
+    greet("shreeta")
+    document.write("<br> add ="+add(1,2,3))
+    x("shreeta")
+    x("shetty")
+    y("ramya")
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<body>
+    <button onclick="alert('gm')"></button>
+    <button onclick="f1()">show</button>
+    <input type="button" value="display" onclick="f2()"/>
+    <button onclick="b1()">exibit</button>
+
+    <script>
+function f1(){
+    document.write("<br>Good morning")
+}
+function f2(){
+    let c = confirm("Go to another page")
+    if(c==true){
+        location.href="function.html"
+    }
+}
+function b1(){
+    let n=prompt("enter your name"+"")
+    document.write("<h1>Welcome "+n)
+        }
+        document.addEventListener("click",f4)
+        function f4(){
+            alert('hi')
+        }
+        
+        
+        </script>
+</body>
