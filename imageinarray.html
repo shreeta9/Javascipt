@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Slide Show</h1>
+    <img src="q.jpg" width="500" height="300" name="pic" ><br>
+    <button onclick="f1()" >previous</button>
+    <button onclick="f2()" >next </button>
+    <button onclick="f3()" >auto </button>
+    <script>
+        let a=new Array("q.jpg","w.jpg","r.jpg","t.jpg")
+        let i=0
+        function f1(){
+            i--
+            if(i<0){
+                i=a.length-1
+            document.pic.src=a[i]
+            }
+
+        }
+        function f2(){
+            i++
+            if(i>a.length-1)
+                i=0
+            document.pic.src=a[i]
+        }
+        function f3(){
+            i=Math.round(Math.random()*(a.length-1))
+            document.pic.src=a[i]
+        }
+
+
+
+    
+    </script>
+
+</body>
+</html>
